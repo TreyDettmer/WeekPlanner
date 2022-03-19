@@ -1,0 +1,43 @@
+<div class="week">
+    <input 
+        class="title"
+        type="text"
+        placeholder=""
+        [(ngModel)]="title"
+        (change)="SaveWeekToLocalStorage()"
+
+    />
+    <div class="day-picker">
+        <div #pick1 class="day-pick active" (click)="scroll(pick1, sunday)">
+            <p>Su</p>
+        </div>
+        <div #pick2 class="day-pick" (click)="scroll(pick2, monday)">
+            <p>M</p>
+        </div>
+        <div #pick3 class="day-pick" (click)="scroll(pick3, tuesday)">
+            <p>T</p>
+        </div>
+        <div #pick4 class="day-pick" (click)="scroll(pick4, wednesday)">
+            <p>W</p>
+        </div>
+        <div #pick5 class="day-pick" (click)="scroll(pick5, thursday)">
+            <p>Tr</p>
+        </div>
+        <div #pick6 class="day-pick" (click)="scroll(pick6, friday)">
+            <p>F</p>
+        </div>
+        <div #pick7 class="day-pick" (click)="scroll(pick7, saturday)">
+            <p>Sa</p>
+        </div>
+    </div>
+    <div #days class="days">
+        <app-day #sunday class="day sunday" dayOfWeek="Sunday"></app-day>
+        <app-day #monday class="day monday" dayOfWeek="Monday"></app-day>
+        <app-day #tuesday class="day tuesday" dayOfWeek="Tuesday"></app-day>
+        <app-day #wednesday class="day wednesday" dayOfWeek="Wednesday"></app-day>
+        <app-day #thursday class="day thursday" dayOfWeek="Thursday"></app-day>
+        <app-day #friday class="day friday" dayOfWeek="Friday"></app-day>
+        <app-day #saturday class="day saturday" dayOfWeek="Saturday"></app-day>
+    </div>
+
+</div>

@@ -1,0 +1,71 @@
+
+.week {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title {
+    border: none;
+    width: 100%;
+    font-size: 1.75em;
+    color: black;
+    padding: .3em;
+    text-align: center;
+    background: none;
+}
+.title::placeholder {
+    color: black;
+}
+
+.title:focus {
+    outline: none;
+}
+
+
+.day-pick {
+    flex: 0 0 2em;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.day-pick.active {
+    background-color: gray;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .days {
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .day-picker {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .days {
+        display: flex;
+        overflow-x: auto;
+        
+    }
+
+    .day {
+        flex: 0 0 90vw;
+    }
+    .day-picker {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+}
+
+
+

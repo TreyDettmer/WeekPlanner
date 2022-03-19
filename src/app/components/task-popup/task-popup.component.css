@@ -1,0 +1,16 @@
+.popup {
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+}
+
+.create-task-button {
+    border-radius: 6px;
+    border: 2px solid #1C5D99;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.create-task-button:hover {
+    cursor: pointer;
+}

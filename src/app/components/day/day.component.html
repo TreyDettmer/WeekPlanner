@@ -1,0 +1,489 @@
+<div class="day" #day>
+    <p class="dayTitle" [style.background-color]="titleColor" >{{dayOfWeek}}</p>
+    <div class="table-container">
+        <table class="timeslots">
+            <tr class="timeslot 00:00">
+                <div class="timeslot-inner-container"><p class="time">00:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 0 && task.numberEnd > 0" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 0">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 00:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">00:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 30 && task.numberEnd > 30" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 30">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 01:00">
+                <div class="timeslot-inner-container"><p class="time">01:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 100 && task.numberEnd > 100" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 100">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 01:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">01:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 130 && task.numberEnd > 130" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 130">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 02:00">
+                <div class="timeslot-inner-container"><p class="time">02:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 200 && task.numberEnd > 200" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 200">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 02:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">02:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 230 && task.numberEnd > 230" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 230">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 03:00">
+                <div class="timeslot-inner-container"><p class="time">03:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 300 && task.numberEnd > 300" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 300">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 03:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">03:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 330 && task.numberEnd > 330" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 330">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 04:00">
+                <div class="timeslot-inner-container"><p class="time">04:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 400 && task.numberEnd > 400" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 400">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 04:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">04:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 430 && task.numberEnd > 430" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 430">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 05:00">
+                <div class="timeslot-inner-container"><p class="time">05:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 500 && task.numberEnd > 500" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 500">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 05:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">05:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 530 && task.numberEnd > 530" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 530">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 06:00">
+                <div class="timeslot-inner-container"><p class="time">06:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 600 && task.numberEnd > 600" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 600">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 06:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">06:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 630 && task.numberEnd > 630" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 630">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 07:00">
+                <div class="timeslot-inner-container"><p class="time">07:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 700 && task.numberEnd > 700" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 700">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 07:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">07:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 730 && task.numberEnd > 730" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 730">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 08:00">
+                <div class="timeslot-inner-container"><p class="time">08:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 800 && task.numberEnd > 800" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 800">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 08:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">08:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 830 && task.numberEnd > 830" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 830">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 09:00">
+                <div class="timeslot-inner-container"><p class="time">09:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 900 && task.numberEnd > 900" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 900">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 09:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">09:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 930 && task.numberEnd > 930" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 930">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 10:00">
+                <div class="timeslot-inner-container"><p class="time">10:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1000 && task.numberEnd > 1000" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1000">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 10:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">10:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1030 && task.numberEnd > 1030" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1030">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 11:00">
+                <div class="timeslot-inner-container"><p class="time">11:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1100 && task.numberEnd > 1100" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1100">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 11:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">11:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1130 && task.numberEnd > 1130" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1130">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 12:00">
+                <div class="timeslot-inner-container"><p class="time">12:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1200 && task.numberEnd > 1200" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1200">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 12:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">12:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1230 && task.numberEnd > 1230" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1230">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 13:00">
+                <div class="timeslot-inner-container"><p class="time">13:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1300 && task.numberEnd > 1300" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1300">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 13:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">13:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1330 && task.numberEnd > 1330" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1330">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 14:00">
+                <div class="timeslot-inner-container"><p class="time">14:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1400 && task.numberEnd > 1400" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1400">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 14:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">14:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1430 && task.numberEnd > 1430" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1430">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 15:00">
+                <div class="timeslot-inner-container"><p class="time">15:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1500 && task.numberEnd > 1500" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1500">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 15:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">15:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1530 && task.numberEnd > 1530" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1530">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 16:00">
+                <div class="timeslot-inner-container"><p class="time">16:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1600 && task.numberEnd > 1600" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1600">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 16:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">16:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1630 && task.numberEnd > 1630" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1630">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 17:00">
+                <div class="timeslot-inner-container"><p class="time">17:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1700 && task.numberEnd > 1700" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1700">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 17:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">17:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1730 && task.numberEnd > 1730" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1730">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 18:00">
+                <div class="timeslot-inner-container"><p class="time">18:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1800 && task.numberEnd > 1800" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1800">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 18:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">18:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1830 && task.numberEnd > 1830" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1830">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 19:00">
+                <div class="timeslot-inner-container"><p class="time">19:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1900 && task.numberEnd > 1900" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1900">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 19:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">19:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 1930 && task.numberEnd > 1930" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 1930">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 20:00">
+                <div class="timeslot-inner-container"><p class="time">20:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2000 && task.numberEnd > 2000" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2000">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 20:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">20:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2030 && task.numberEnd > 2030" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2000">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 21:00">
+                <div class="timeslot-inner-container"><p class="time">21:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2100 && task.numberEnd > 2100" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2100">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 21:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">21:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2130 && task.numberEnd > 2130" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2130">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 22:00">
+                <div class="timeslot-inner-container"><p class="time">22:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2200 && task.numberEnd > 2200" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2200">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 22:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">22:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2230 && task.numberEnd > 2230" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2230">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 23:00">
+                <div class="timeslot-inner-container"><p class="time">23:00</p></div>
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2300 && task.numberEnd > 2300" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2300">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+            <tr class="timeslot 23:30">
+                <!-- <div class="timeslot-inner-container"><p class="time">23:30</p></div> -->
+                <div class="tasks-container">
+                    <ng-container *ngFor="let task of tasks; let i = index;">
+                        <td *ngIf="task.numberStart <= 2330 && task.numberEnd > 2330" class="task" [style.background]="tasks[i].color" (click)="EditTask(i)">
+                            <span *ngIf="task.numberStart == 2330">{{tasks[i].name}}</span>
+                        </td>
+                    </ng-container>              
+                </div>
+            </tr>
+        </table>
+    </div>
+
+    <button class="task-button" (click)="openDialog()">New Task</button>
+</div>
